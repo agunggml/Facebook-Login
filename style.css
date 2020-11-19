@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  width: 70%;
+}
+
+.left {
+  padding: 20px;
+  width: 50%;
+}
+
+.left img {
+  height: 106px;
+  margin-left: -30px;
+}
+
+.left h2 {
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.right {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.right .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid rgb(204, 204, 204);
+  font-size: 1em;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #0d69e0;
+  box-shadow: 0 0 0 2px #e7f3ff;
+  outline: none;
+}
+
+.login {
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #1877f2;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+form button:hover {
+  transition: 0.3s ease;
+  background-color: #0d69e0;
+}
+
+.forget {
+  text-align: center;
+  display: block;
+  color: #0d69e0;
+  font-size: 0.9em;
+}
+a.forget:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  margin: 20px 0;
+}
+
+.register {
+  background-color: #42b72a;
+  border: none;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin: auto;
+  font-size: 1.05em;
+}
+
+.register:hover {
+  background-color: #36a420;
+  transition: 0.3s ease;
+}
+
+.halaman {
+  margin-top: 20px;
+  font-size: 0.85em;
+  padding: 0 20px;
+  color: black;
+  margin: 20px 20px 20px 0;
+}
+
+.halaman a {
+  color: black;
+  font-weight: bold;
+}
+
+.halaman a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Version */
+@media screen and (max-width: 1024px) {
+  .row {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .halaman {
+    text-align: center;
+  }
+}
