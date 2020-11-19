@@ -117,6 +117,7 @@ a.forget:hover {
   display: block;
   margin: auto;
   font-size: 1.05em;
+  cursor: pointer;
 }
 
 .register:hover {
